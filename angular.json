@@ -72,11 +72,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "chess-board:build"
+            "browserTarget": "chess-board:build"
+
           },
           "configurations": {
             "production": {
-              "buildTarget": "chess-board:build:production"
+              "browserTarget": "chess-board:build:production"
             }
           }
         },
@@ -145,5 +146,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
